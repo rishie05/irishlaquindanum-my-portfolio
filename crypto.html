@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Preview</title>
+  <style>
+    :root {
+      --background-light: #ffffff;
+      --background-dark: #1a1a1a;
+      --primary-text: #0a0a0a;
+      --accent-color: #eba225;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: Arial, sans-serif;
+      background-color: var(--background-light);
+      color: var(--primary-text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      background-color: var(--accent-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #d18e1f;
+    }
+
+    .project-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 600px) {
+      .project-image {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html#projects" class="back-button">← Back to Projects</a>
+
+  <img src="assets\techno - cryptoway.png" alt="Project Preview" class="project-image" />
+
+</body>
+</html>
